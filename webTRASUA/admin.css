@@ -1,0 +1,222 @@
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eee4e1;
+    color: #333;
+}
+
+.container1 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.content h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #b2967d;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-container button {
+    background-color: #e6beae;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    flex: 1;
+    transition: background-color 0.3s;
+}
+
+.btn-container button:hover {
+    background-color: #ff9a7a;
+}
+
+#productList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Giúp căn đều các sản phẩm trong một hàng */
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+    /* Mỗi sản phẩm chiếm 1/4 hàng, trừ đi khoảng cách margin */
+    box-sizing: border-box;
+    /* Đảm bảo padding và border được tính vào kích thước */
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    height: 75%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-item img:hover {
+    transform: scale(1.05);
+}
+
+.product-item p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.product-item p:first-of-type {
+    font-weight: bold;
+    color: #b2967d;
+}
+
+.product-item .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.product-item .btn-container button {
+    padding: 10px;
+    background-color: #e6beae;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 2px;
+    transition: background-color 0.3s;
+}
+
+.product-item .btn-container button:hover {
+    background-color: #ff9a7a;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+
+
+.modal1 {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content1 {
+    background-image: linear-gradient(to left bottom, #ff845f, #ff9a7a, #ffaf96, #ffc4b2, #ffd9ce);
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content1 h2 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+
+}
+
+#editProductForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+}
+
+#editProductForm label {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#editProductForm input,
+#editProductForm select {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#editProductForm button {
+    background-color: #00aeae;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#editProductForm button:hover {
+    background-color: #008b8b;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

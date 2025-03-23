@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-image: radial-gradient(circle, #ff845f, #fe916f, #fc9d80, #f9a990, #f5b5a1, #f5b5a1, #f5b5a1, #f5b5a1, #f9a990, #fc9d80, #fe916f, #ff845f);
+    /* Primary color */
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 4px solid #d4a59a;
+    /* Slightly darker shade */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#cam-on p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+#tiep-tuc {
+    margin-top: 20px;
+}
+
+#tiep-tuc a {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #e6beae;
+    /* Primary color */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#tiep-tuc a:hover {
+    background-color: #ff9a7a;
+    /* Slightly darker shade */
+    transform: scale(1.05);
+}
+
+footer {
+    background-image: radial-gradient(circle, #ff845f, #fe916f, #fc9d80, #f9a990, #f5b5a1, #f5b5a1, #f5b5a1, #f5b5a1, #f9a990, #fc9d80, #fe916f, #ff845f);
+
+    /* Primary color */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-top: 4px solid #d4a59a;
+    /* Slightly darker shade */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

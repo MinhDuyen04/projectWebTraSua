@@ -1,0 +1,278 @@
+.container {
+    width: 100%;
+    max-width: 1270px;
+    margin: 20px auto;
+    position: relative;
+    padding-top: 180px;
+    /* Để tránh nội dung bị đè lên header */
+}
+
+.row {
+    display: flex;
+}
+
+header {
+    position: relative;
+}
+
+header.row {
+    position: fixed;
+    /* Đặt header ở vị trí cố định */
+    top: 0;
+    /* Gắn header ở đầu trang */
+    width: 1270px;
+    /* Đảm bảo header chiếm toàn bộ chiều rộng */
+    height: 180px;
+    background-image: url('./pic/header.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    /* Đảm bảo header nằm trên các phần tử khác */
+}
+
+header.row .logo img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    margin-left: 20px;
+
+}
+
+
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#loginForm,
+#registerForm {
+    display: none;
+}
+
+nav.row {
+    position: fixed;
+    /* Đặt nav ở vị trí cố định */
+    top: 180px;
+    /* Đặt nav ngay bên dưới header (180px là chiều cao của header) */
+    width: 1270px;
+    /* Đảm bảo nav chiếm toàn bộ chiều rộng */
+    background-image: radial-gradient(circle, #ff845f, #fe916f, #fc9d80, #f9a990, #f5b5a1, #f5b5a1, #f5b5a1, #f5b5a1, #f9a990, #fc9d80, #fe916f, #ff845f);
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    /* Đảm bảo nav nằm trên các phần tử khác nhưng dưới header */
+}
+
+nav.row ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav.row li {
+    margin: 0 20px;
+}
+
+nav.row a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav.row a:hover {
+    background-color: #eee4e1;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+.contact-details div {
+    text-align: center;
+    max-width: 30%;
+}
+
+.contact-details h2 {
+    font-size: 21px;
+    color: white;
+    margin-bottom: -13px;
+}
+
+.contact-details p {
+    font-size: 17px;
+    color: white;
+    text-shadow: 0 0 2px cornsilk;
+}
+
+.contact-details a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #16a085;
+}
+
+footer.row {
+    background-image: linear-gradient(to right top, #ffd9ce, #feccbd, #fdbeac, #fbb19b, #f8a48b, #f69d83, #f4967a, #f28f72, #f08d70, #ee8b6e, #ec896c, #ea876a);
+}
+
+.col-9 {
+    min-height: 500px;
+    background-color: #e7d8c9;
+    flex: 3;
+}
+
+.account-icon {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #ffd9ce;
+    border-radius: 50%;
+
+}
+
+
+
+.logout-menu {
+    display: none;
+    /* Ẩn menu đăng xuất mặc định */
+    position: absolute;
+    top: 65px;
+    right: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.logout-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logout-menu ul li {
+    margin-bottom: 10px;
+}
+
+/* Định dạng cho các nút trong menu đăng xuất */
+.logout-button {
+    padding: 5px;
+    background-color: #e6beae;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #b2967d;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+}
+
+/* Hiệu ứng hover cho các nút trong menu */
+.logout-button:hover,
+.admin-button:hover {
+    background-color: #b2967d;
+    color: #eee4e1;
+}
+
+/* CSS cho menu đăng xuất và các nút */
+.logout-button {
+    background-color: #e6beae;
+}
+
+.admin-button {
+    padding: 5px;
+    background-color: #e6beae;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #b2967d;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.account-menu {
+    position: relative;
+}
+
+.account-info {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    padding-right: 77px;
+    padding-top: 30px;
+    margin-right: 10px;
+}
+
+.auth-buttons {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth-buttons a {
+    border: 2px solid black;
+    padding: 5px;
+    color: white;
+
+}
+
+.auth-buttons .login-button {
+    background-color: #ff845f;
+    color: #eee4e1;
+    border-color: #e7d8c9;
+    text-decoration: none;
+}
+
+.auth-buttons .register-button {
+    background-color: #f5b5a1;
+    color: #333;
+    border-color: #b2967d;
+    text-decoration: none;
+}
